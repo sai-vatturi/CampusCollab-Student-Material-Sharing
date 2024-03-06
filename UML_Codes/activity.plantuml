@@ -1,0 +1,26 @@
+@startuml
+start
+:Access Homepage;
+if (Is Logged In?) then (yes)
+  :Choose Activity;
+  if (Search for Materials) then (yes)
+    :Enter Search Criteria;
+    :Display Results;
+  elseif (Upload Material) then (yes)
+    :Select Course;
+    :Upload File;
+    :Enter Metadata;
+    :Confirm Upload;
+  else (Download Material)
+    :Browse Materials;
+    :Select Material;
+    :Download;
+  endif
+else (no)
+  :Register/Login;
+  :Verify Account;
+  -> [Return to Homepage] Choose Activity;
+endif
+
+stop
+@enduml

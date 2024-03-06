@@ -1,0 +1,21 @@
+sequenceDiagram
+    participant U as User
+    participant UI as User Interface
+    participant AS as Authentication Service
+    participant SS as Search Service
+    participant DS as Download Service
+    participant DB as Database
+
+    U->>+UI: Access website
+    UI->>+AS: Request authentication
+    AS-->>-UI: Authentication successful
+    U->>+UI: Search for materials
+    UI->>+SS: Query materials
+    SS->>+DB: Fetch materials
+    DB-->>-SS: Return results
+    SS-->>-UI: Display results
+    U->>+UI: Select material
+    UI->>+DS: Request download
+    DS->>+DB: Retrieve material
+    DB-->>-DS: Material data
+    DS-->>-U: Download material

@@ -1,0 +1,8 @@
+stateDiagram-v2
+    [*] --> Registration
+    Registration --> Active: Verify Email
+    Active --> Suspended: Violate Policies
+    Suspended --> Active: Resolve Issue
+    Active --> Deactivated: Request Deactivation
+    Deactivated --> Active: Reactivate Account
+    Deactivated --> [*]: Delete Account

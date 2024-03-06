@@ -1,0 +1,32 @@
+stateDiagram-v2
+
+  # Initial Draft state (optional)
+  Draft --> Created: Start Material Creation
+
+  Created --> Submitted: Submit for Review
+
+  Submitted --> UnderReview: Start Review
+  UnderReview --> Approved: Review Passed
+  UnderReview --> Rejected: Review Failed
+
+  Approved --> Published: Publish Material
+  Published --> Archived: Archive due to Obsolescence
+  Published --> Updated: Update Material
+
+  Updated --> Published: Re-publish
+
+  Rejected --> Revised: Revise Material
+  Revised --> Submitted: Re-submit for Review
+
+  # Terminal states
+  Archived --> [*]
+  Rejected --> [*]
+
+  # Nested sub-states for Published materials
+  state Published {
+    [*] --> Available: Make available
+    Available --> Unavailable: Mark as Unavailable
+    Unavailable --> Available: Mark as Available
+    Available --> FeedbackReceived: Receive Feedback
+    FeedbackReceived --> Updated: Update based on Feedback
+  }
