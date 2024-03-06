@@ -1,0 +1,72 @@
+@startuml
+skinparam style strictuml
+
+skin rose
+
+class User {
+  - username: String
+  - password: String
+  - email: String
+  - role: String
+  + login(): void
+  + logout(): void
+  + register(): void
+  + updateProfile(): void
+}
+
+class Student extends User {
+  - studentID: String
+  - coursesEnrolled: List<Course>
+  + enrollInCourse(courseID: String): void
+  + submitMaterial(material: Material): void
+}
+
+class Faculty extends User {
+  - facultyID: String
+  - coursesTaught: List<Course>
+  + addCourseMaterial(courseID: String, material: Material): void
+  + gradeMaterial(studentID: String, materialID: String, grade: String): void
+}
+
+class Administrator extends User {
+  + createUser(user: User): void
+  + deleteUser(userID: String): void
+  + updateCourse(course: Course): void
+}
+
+class Material {
+  - title: String
+  - type: String
+  - courseID: String
+  - uploadedBy: String
+  - uploadDate: Date
+  + upload(): void
+  + download(): void
+  + rate(): void
+  + comment(): void
+}
+
+class Course {
+  - courseID: String
+  - name: String
+  - semester: String
+  - universityID: String
+  + addCourse(): void
+  + updateCourse(): void
+  + deleteCourse(): void
+}
+
+class Feedback {
+  - materialID: String
+  - userID: String
+  - comment: String
+  - rating: Integer
+  + addComment(): void
+  + addRating(): void
+}
+
+User "1" -- "0..*" Material
+Course "1" -- "0..*" Material
+User "1" -- "0..*" Feedback
+
+@enduml
