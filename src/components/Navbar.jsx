@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 const Navbar = () => {
     return (
-        <div className="w-full h-20 flex items-center px-5 justify-between">
+        <div className="w-full h-16 flex items-center px-5 justify-between">
             <Logo />
             <div className="font-bold">
                 <button className="px-4 py-1 border border-black rounded-md mx-4">
