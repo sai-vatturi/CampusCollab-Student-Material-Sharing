@@ -3,7 +3,7 @@ import { FaUserFriends } from "react-icons/fa";
 
 const Logo = () => {
     return (
-        <div className="font-serif flex align-middle justify-center font-gilory">
+        <div className="font-serif flex align-middle font-gilory">
             <div>
                 <FaUserFriends size={38} />
             </div>

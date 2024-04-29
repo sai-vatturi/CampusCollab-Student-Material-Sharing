@@ -30,6 +30,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: "Sofia Pro";
+    src: url("./fonts/sofia-pro/sf-black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
     font-family: "Gilroy";
     src: url("./fonts/gilroy/Gilroy-ExtraBold.otf") format("opentype");
     font-weight: 800;
