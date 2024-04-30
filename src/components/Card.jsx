@@ -26,7 +26,7 @@ const Card = ({
                             <button className="bg-gray-300 hover:bg-gray-400 hover:text-white text-[#737373] w-28 h-8 rounded-md ml-1">
                                 View
                             </button>
-                            <button className="bg-[#8466FF] hover:bg-[#651FFF] text-[#E2E4E9] w-28 h-8 rounded-md mr-1">
+                            <button className="bg-[#542aff] hover:bg-[#532ea3] text-[#E2E4E9] w-28 h-8 rounded-md mr-1">
                                 Download
                             </button>
                         </div>

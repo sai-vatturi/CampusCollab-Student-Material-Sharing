@@ -11,16 +11,16 @@ const MaterialsView = () => {
                 <Navbar />
                 <div className="h-[1px] bg-[#651FFF]"></div>
             </div>
-            <h1 className="font-bold text-5xl pt-24 w-[1140px] mx-auto">
+            <h1 className="font-bold text-5xl pt-24 mx-12 lg:w-[1140px] lg:mx-auto">
                 Download Materials
             </h1>
-            <div className="pt-6 w-[1050px] mx-auto">
+            <div className="pt-6 lg:w-[1050px] mx-12 lg:mx-auto">
                 <div className="font-bold text-3xl">Handwritten Notes</div>
                 <p className="text-[#5C5F6E] pt-2">
                     Find various handwritten notes from different universities
                     below and enhance your learning journey!
                 </p>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 pt-4">
+                <div className="lg:grid flex flex-col items-center lg:grid-cols-3 pt-4">
                     {cardData.map((card, index) => (
                         <Card
                             key={index}
