@@ -5,6 +5,7 @@ import Group1 from "./assets/bg-graphics/Group-1.svg";
 import Group2 from "./assets/bg-graphics/Group-2.svg";
 import Group3 from "./assets/bg-graphics/Group-3.svg";
 import CustomSelect from "./components/CustomSelect";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     const selectOptions = [
@@ -57,15 +58,16 @@ const Hero = () => {
                         />
                     ))}
                 </div>
-
-                <div className="flex justify-center my-5 font-bold">
-                    <button className="text-white bg-customPurple px-4 py-1.5 rounded-md mx-2">
-                        Search Materials
-                    </button>
-                    <button className="px-4 py-1 border bg-white text-customPurple rounded-md mx-4">
-                        Upload Materials
-                    </button>
-                </div>
+                <Link to="/materials">
+                    <div className="flex justify-center my-5 font-bold">
+                        <button className="text-white bg-customPurple px-4 py-1.5 rounded-md mx-2">
+                            Search Materials
+                        </button>
+                        <button className="px-4 py-1 border bg-white text-customPurple rounded-md mx-4">
+                            Upload Materials
+                        </button>
+                    </div>
+                </Link>
             </div>
             <div className="bg-[#1A284E] h-screen">
                 <img
