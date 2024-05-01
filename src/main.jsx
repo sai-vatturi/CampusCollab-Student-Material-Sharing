@@ -5,7 +5,7 @@ import "./index.css";
 import "./fonts.css";
 import LoginPage from "./LoginPage.jsx";
 import MaterialsView from "./MaterialsView.jsx";
-import Card from "./components/Card.jsx";
+import SignUpPage from "./SignUpPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
     {
         path: "/materials",
         element: <MaterialsView />,
+    },
+    {
+        path: "/signup",
+        element: <SignUpPage />,
     },
 ]);
 
