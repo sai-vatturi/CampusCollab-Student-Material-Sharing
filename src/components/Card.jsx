@@ -11,8 +11,18 @@ const Card = ({
     downloads,
     views,
 }) => {
+    const handleViewClick = () => {
+        window.location.href =
+            "https://drive.google.com/file/d/1rueLgQpSTpLh2ocS40amGIBT9o4VQqVJ/view";
+    };
+
+    const handleDownloadClick = () => {
+        window.location.href =
+            "https://drive.google.com/file/d/1rueLgQpSTpLh2ocS40amGIBT9o4VQqVJ/view";
+    };
+
     return (
-        <div className="pb-10">
+        <div className="pb-10 hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="w-[300px] h-[450px] bg-white rounded-xl shadow-sm shadow-[#838696] flex flex-col">
                 <div className="my-5 mx-3">
                     <img src={image} alt="" className="rounded-sm" />
@@ -23,10 +33,16 @@ const Card = ({
                             <p>{pages}</p>
                         </div>
                         <div className="flex justify-between text-[10px] text-[#737373] mt-4">
-                            <button className="bg-gray-300 hover:bg-gray-400 hover:text-white text-[#737373] w-28 h-8 rounded-md ml-1">
+                            <button
+                                onClick={handleViewClick}
+                                className="bg-gray-300 hover:bg-gray-400 hover:text-white text-[#737373] w-28 h-8 rounded-md ml-1"
+                            >
                                 View
                             </button>
-                            <button className="bg-[#542aff] hover:bg-[#532ea3] text-[#E2E4E9] w-28 h-8 rounded-md mr-1">
+                            <button
+                                onClick={handleDownloadClick}
+                                className="bg-[#542aff] hover:bg-[#532ea3] text-[#E2E4E9] w-28 h-8 rounded-md mr-1"
+                            >
                                 Download
                             </button>
                         </div>

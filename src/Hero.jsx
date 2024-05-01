@@ -60,10 +60,10 @@ const Hero = () => {
                 </div>
                 <Link to="/materials">
                     <div className="flex justify-center my-5 font-bold">
-                        <button className="text-white bg-customPurple px-4 py-1.5 rounded-md mx-2">
+                        <button className="text-white bg-customPurple px-4 py-1.5 rounded-md mx-2  hover:bg-[#8640ff]">
                             Search Materials
                         </button>
-                        <button className="px-4 py-1 border bg-white text-customPurple rounded-md mx-4">
+                        <button className="px-4 py-1 border bg-white text-customPurple rounded-md mx-4 hover:bg-gray-200">
                             Upload Materials
                         </button>
                     </div>
