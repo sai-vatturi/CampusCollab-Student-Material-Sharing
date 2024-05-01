@@ -8,10 +8,12 @@ const Navbar = () => {
             <Logo />
             <div className="font-bold hidden md:block">
                 <Link to="/login">
-                    <button className="px-4 py-1 border border-black rounded-md mx-4">
+                    <button className="px-4 py-1 border border-2 border-black rounded-md mx-4 hover:bg-gray-100">
                         Sign In
                     </button>
-                    <button className="text-white bg-customPurple px-4 py-1.5 rounded-md mx-2">
+                </Link>
+                <Link to="/signup">
+                    <button className="text-white bg-customPurple hover:bg-[#9c40ff] px-4 py-1.5 rounded-md mx-2">
                         Create an Account
                     </button>
                 </Link>
