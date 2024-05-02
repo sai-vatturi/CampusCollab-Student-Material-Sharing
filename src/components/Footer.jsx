@@ -2,6 +2,7 @@ import React from "react";
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
+
 const Footer = () => {
     return (
         <footer className="footer bg-[#1A284E] text-[#E2E4E9] py-8">
@@ -34,7 +35,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                href="/user-guide"
+                                href="https://campus-collab-beta.vercel.app/user-guide.html"
                                 className="text-gray-400 hover:text-white"
                             >
                                 User Guide
@@ -58,7 +59,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                href="/contact-us"
+                                href="https://campus-collab-beta.vercel.app/contact.html"
                                 className="text-gray-400 hover:text-white"
                             >
                                 Contact us
