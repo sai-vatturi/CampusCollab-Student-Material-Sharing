@@ -7,6 +7,7 @@ import LoginPage from "./LoginPage.jsx";
 import MaterialsView from "./MaterialsView.jsx";
 import SignUpPage from "./SignUpPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import UserGuide from "./UserGuide.jsx";
 
 const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     {
         path: "/signup",
         element: <SignUpPage />,
+    },
+    {
+        path: "/userguide",
+        element: <UserGuide />,
     },
 ]);
 
