@@ -2,6 +2,7 @@ import React from "react";
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -35,7 +36,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                href="https://campus-collab-beta.vercel.app/user-guide.html"
+                                href="/userguide"
                                 className="text-gray-400 hover:text-white"
                             >
                                 User Guide
