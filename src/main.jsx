@@ -8,6 +8,7 @@ import MaterialsView from "./MaterialsView.jsx";
 import SignUpPage from "./SignUpPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UserGuide from "./UserGuide.jsx";
+import NotFoundPage from "./NotFoundPage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
         path: "/userguide",
         element: <UserGuide />,
+    },
+    {
+        path: "*",
+        element: <NotFoundPage />,
     },
 ]);
 
