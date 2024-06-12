@@ -9,6 +9,7 @@ import SignUpPage from "./SignUpPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UserGuide from "./UserGuide.jsx";
 import NotFoundPage from "./NotFoundPage.jsx";
+import ContactUs from "./ContactUs.jsx";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     {
         path: "/userguide",
         element: <UserGuide />,
+    },
+    {
+        path: "/contactus",
+        element: <ContactUs />,
     },
     {
         path: "*",

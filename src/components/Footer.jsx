@@ -60,7 +60,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                href="https://campus-collab-beta.vercel.app/contact.html"
+                                href="/contactus"
                                 className="text-gray-400 hover:text-white"
                             >
                                 Contact us
