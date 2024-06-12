@@ -1,4 +1,3 @@
-// GuideCard.js
 import React from "react";
 
 const GuideCard = ({ guideNumber, title, description, steps, image }) => {
