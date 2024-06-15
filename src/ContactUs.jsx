@@ -92,7 +92,7 @@ const ContactUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="bg-[#F4F5F6] m-6 rounded-3xl p-6">
+                    <div className="bg-[#F4F5F6] m-6 rounded-3xl p-6 max-w-[454px]">
                         <div>
                             <h2 className="text-2xl font-bold py-2">
                                 Any Interesting Ideas to improve the platform?
